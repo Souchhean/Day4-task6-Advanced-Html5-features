@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+<body>
+    <button onclick="storeData()">Save Data</button>
+<button onclick="retrieveData()">Get Data</button>
+
+<script>
+function storeData() {
+  localStorage.setItem("name", "John Doe");
+  alert("Data saved!");
+}
+
+function retrieveData() {
+  var name = localStorage.getItem("name");
+  if (name) {
+    alert("Stored name: " + name);
+  } else {
+    alert("No data found");
+  }
+}
+</script>
+
+</body>
+</html>
